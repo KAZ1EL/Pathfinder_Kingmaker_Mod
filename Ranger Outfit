@@ -95,7 +95,7 @@ namespace KAZ_Outfit_Ranger_A_01
                 LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Fighter_Pants.png")),
             };
             //EE_Fighter_F_Any_Colorize
-            BodyPartTextures["EE_Fighter_F_Any_Colorize.d771acb96d986484dbd006a78a65cdba"] = new Texture2D[]
+            BodyPartTextures["d771acb96d986484dbd006a78a65cdba"] = new Texture2D[]
             {
                 LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Fighter_Forearms.png")),
                 LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Fighter_Faulds.png")),
