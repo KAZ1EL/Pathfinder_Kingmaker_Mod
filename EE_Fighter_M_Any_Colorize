@@ -1,0 +1,948 @@
+{
+  "$id": "1",
+  "$type": "Kingmaker.Visual.CharacterSystem.EquipmentEntity, Assembly-CSharp",
+  "m_HideBodyParts": 0,
+  "m_PrimaryRamps": [],
+  "m_SecondaryRamps": [],
+  "IsExportEnabled": false,
+  "Layer": 100,
+  "ShowLowerMaterials": true,
+  "SkeletonModifiers": [],
+  "ColorsProfile": {
+    "$id": "2",
+    "$type": "Kingmaker.Visual.CharacterSystem.CharacterColorsProfile, Assembly-CSharp",
+    "PrimaryRamps": [
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlueDarker",
+        "InstanceId": 10598692
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlueDark",
+        "InstanceId": 10599450
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlueMedium",
+        "InstanceId": 10600528
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlueLight",
+        "InstanceId": 10597556
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlueLighter",
+        "InstanceId": 10597248
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_GreenDarker",
+        "InstanceId": 10597950
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_GreenDark",
+        "InstanceId": 10597034
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_GreenMedium",
+        "InstanceId": 10600124
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_GreenLight",
+        "InstanceId": 10598284
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_GreenLighter",
+        "InstanceId": 10597114
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_YellowDarker",
+        "InstanceId": 10596136
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_YellowDark",
+        "InstanceId": 10598486
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_YellowMedium",
+        "InstanceId": 10597076
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_YellowLight",
+        "InstanceId": 10599508
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_YellowLighter",
+        "InstanceId": 10598586
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_OrangeDarker",
+        "InstanceId": 10598240
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_OrangeDark",
+        "InstanceId": 10600910
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_OrangeMedium",
+        "InstanceId": 10600982
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_OrangeLight",
+        "InstanceId": 10599128
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_OrangeLighter",
+        "InstanceId": 10598230
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_RedDarker",
+        "InstanceId": 10598010
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_RedDark",
+        "InstanceId": 10597204
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_RedMedium",
+        "InstanceId": 10600278
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_RedLight",
+        "InstanceId": 10599934
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_RedLighter",
+        "InstanceId": 10600430
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_PurpleDarker",
+        "InstanceId": 10599222
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_PurpleDark",
+        "InstanceId": 10600308
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_PurpleMedium",
+        "InstanceId": 10596746
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_PurpleLight",
+        "InstanceId": 10596352
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_PurpleLighter",
+        "InstanceId": 10597796
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlackDarker",
+        "InstanceId": 10598430
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlackDark",
+        "InstanceId": 10597428
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlackMedium",
+        "InstanceId": 10599270
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlackLight",
+        "InstanceId": 10598676
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlackLighter",
+        "InstanceId": 10596080
+      }
+    ],
+    "SecondaryRamps": [
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlueDarker",
+        "InstanceId": 10598692
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlueDark",
+        "InstanceId": 10599450
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlueMedium",
+        "InstanceId": 10600528
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlueLight",
+        "InstanceId": 10597556
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlueLighter",
+        "InstanceId": 10597248
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_GreenDarker",
+        "InstanceId": 10597950
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_GreenDark",
+        "InstanceId": 10597034
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_GreenMedium",
+        "InstanceId": 10600124
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_GreenLight",
+        "InstanceId": 10598284
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_GreenLighter",
+        "InstanceId": 10597114
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_YellowDarker",
+        "InstanceId": 10596136
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_YellowDark",
+        "InstanceId": 10598486
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_YellowMedium",
+        "InstanceId": 10597076
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_YellowLight",
+        "InstanceId": 10599508
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_YellowLighter",
+        "InstanceId": 10598586
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_OrangeDarker",
+        "InstanceId": 10598240
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_OrangeDark",
+        "InstanceId": 10600910
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_OrangeMedium",
+        "InstanceId": 10600982
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_OrangeLight",
+        "InstanceId": 10599128
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_OrangeLighter",
+        "InstanceId": 10598230
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_RedDarker",
+        "InstanceId": 10598010
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_RedDark",
+        "InstanceId": 10597204
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_RedMedium",
+        "InstanceId": 10600278
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_RedLight",
+        "InstanceId": 10599934
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_RedLighter",
+        "InstanceId": 10600430
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_PurpleDarker",
+        "InstanceId": 10599222
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_PurpleDark",
+        "InstanceId": 10600308
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_PurpleMedium",
+        "InstanceId": 10596746
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_PurpleLight",
+        "InstanceId": 10596352
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_PurpleLighter",
+        "InstanceId": 10597796
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlackDarker",
+        "InstanceId": 10598430
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlackDark",
+        "InstanceId": 10597428
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlackMedium",
+        "InstanceId": 10599270
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlackLight",
+        "InstanceId": 10598676
+      },
+      {
+        "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+        "name": "CR_Fighter_BlackLighter",
+        "InstanceId": 10596080
+      }
+    ],
+    "name": "CL_Fighter_U_Any"
+  },
+  "BodyParts": [
+    {
+      "$id": "3",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Forearms",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "FA_Forearms_M_Any",
+        "InstanceId": 10598616
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "4",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "FA_Forearms_Warrior_U_Any",
+            "InstanceId": 10599578
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "5",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Faulds",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "FD_Faulds_M_Any",
+        "InstanceId": 10600234
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "6",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "FD_Faulds_Warrior_U_Any",
+            "InstanceId": 10598296
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "7",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Faulds",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "FD_Faulds_M_Any",
+        "InstanceId": 10600234
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "8",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "FD_Faulds_WarriorColor1_U_Any",
+            "InstanceId": 10599006
+          },
+          "m_Ramps": [
+            {
+              "$id": "9",
+              "$type": "Kingmaker.Visual.CharacterSystem.RampMaskDescription, Assembly-CSharp",
+              "Mask": {
+                "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+                "name": "whiteSquare",
+                "InstanceId": 10597736
+              },
+              "Ramp": null
+            },
+            {
+              "$id": "10",
+              "$type": "Kingmaker.Visual.CharacterSystem.RampMaskDescription, Assembly-CSharp",
+              "Mask": null,
+              "Ramp": null
+            }
+          ],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "11",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Faulds",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "FD_Faulds_M_Any",
+        "InstanceId": 10600234
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "12",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "FD_Faulds_WarriorColor2_U_Any",
+            "InstanceId": 10597624
+          },
+          "m_Ramps": [
+            {
+              "$id": "13",
+              "$type": "Kingmaker.Visual.CharacterSystem.RampMaskDescription, Assembly-CSharp",
+              "Mask": null,
+              "Ramp": null
+            },
+            {
+              "$id": "14",
+              "$type": "Kingmaker.Visual.CharacterSystem.RampMaskDescription, Assembly-CSharp",
+              "Mask": {
+                "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+                "name": "whiteSquare",
+                "InstanceId": 10597736
+              },
+              "Ramp": null
+            }
+          ],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "15",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Faulds",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "FD_Faulds_M_Any",
+        "InstanceId": 10600234
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "16",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "FD_Faulds_WarriorDirt_U_Any",
+            "InstanceId": 10600246
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "17",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Hands",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "HN_Hands_M_Any",
+        "InstanceId": 10596566
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "18",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "HN_Hands_WarriorShadow_U_Any",
+            "InstanceId": 10600402
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "19",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Hands",
+      "RendererPrefab": null,
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "20",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "HN_Hands_Warrior_U_Any",
+            "InstanceId": 10596922
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "21",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Torso",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "TS_Shirt_M_Any",
+        "InstanceId": 10601042
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "22",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "TS_Shirt_Warrior_U_Any",
+            "InstanceId": 10599872
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "23",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Torso",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "TS_Shirt_M_Any",
+        "InstanceId": 10601042
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "24",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "TS_Shirt_WarriorColor1_U_Any",
+            "InstanceId": 10598354
+          },
+          "m_Ramps": [
+            {
+              "$id": "25",
+              "$type": "Kingmaker.Visual.CharacterSystem.RampMaskDescription, Assembly-CSharp",
+              "Mask": {
+                "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+                "name": "whiteSquare",
+                "InstanceId": 10597736
+              },
+              "Ramp": null
+            },
+            {
+              "$id": "26",
+              "$type": "Kingmaker.Visual.CharacterSystem.RampMaskDescription, Assembly-CSharp",
+              "Mask": null,
+              "Ramp": null
+            }
+          ],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "27",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Torso",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "TS_Shirt_M_Any",
+        "InstanceId": 10601042
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "28",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "TS_Shirt_WarriorColor2_U_Any",
+            "InstanceId": 10598544
+          },
+          "m_Ramps": [
+            {
+              "$id": "29",
+              "$type": "Kingmaker.Visual.CharacterSystem.RampMaskDescription, Assembly-CSharp",
+              "Mask": null,
+              "Ramp": null
+            },
+            {
+              "$id": "30",
+              "$type": "Kingmaker.Visual.CharacterSystem.RampMaskDescription, Assembly-CSharp",
+              "Mask": {
+                "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+                "name": "whiteSquare",
+                "InstanceId": 10597736
+              },
+              "Ramp": null
+            }
+          ],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "31",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Torso",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "TS_Shirt_M_Any",
+        "InstanceId": 10601042
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "32",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "TS_Shirt_WarriorDecor_U_Any",
+            "InstanceId": 10598320
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "33",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Boots",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "BO_BootsStrapped_M_Any",
+        "InstanceId": 10601162
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "34",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "BO_BootsStrapped_Warrior_U_Any",
+            "InstanceId": 10600172
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "35",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Upperarms",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "UA_ShortSleeve_M_Any",
+        "InstanceId": 10600534
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "36",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "UA_ShortSleeve_Warrior_U_Any",
+            "InstanceId": 10597840
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "37",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Upperarms",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "UA_ShortSleeve_M_Any",
+        "InstanceId": 10600534
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "38",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "UA_ShortSleeve_WarriorColor1_U_Any",
+            "InstanceId": 10599266
+          },
+          "m_Ramps": [
+            {
+              "$id": "39",
+              "$type": "Kingmaker.Visual.CharacterSystem.RampMaskDescription, Assembly-CSharp",
+              "Mask": {
+                "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+                "name": "whiteSquare",
+                "InstanceId": 10597736
+              },
+              "Ramp": null
+            },
+            {
+              "$id": "40",
+              "$type": "Kingmaker.Visual.CharacterSystem.RampMaskDescription, Assembly-CSharp",
+              "Mask": null,
+              "Ramp": null
+            }
+          ],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "41",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Upperarms",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "UA_ShortSleeve_M_Any",
+        "InstanceId": 10600534
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "42",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "UA_ShortSleeve_WarriorColor2_U_Any",
+            "InstanceId": 10599632
+          },
+          "m_Ramps": [
+            {
+              "$id": "43",
+              "$type": "Kingmaker.Visual.CharacterSystem.RampMaskDescription, Assembly-CSharp",
+              "Mask": null,
+              "Ramp": null
+            },
+            {
+              "$id": "44",
+              "$type": "Kingmaker.Visual.CharacterSystem.RampMaskDescription, Assembly-CSharp",
+              "Mask": {
+                "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+                "name": "whiteSquare",
+                "InstanceId": 10597736
+              },
+              "Ramp": null
+            }
+          ],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "45",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Upperarms",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "UA_ShortSleeve_M_Any",
+        "InstanceId": 10600534
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "46",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "UA_ShortSleeve_WarriorDecor_U_Any",
+            "InstanceId": 10597698
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "47",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Upperlegs",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "UL_PantsWide_M_Any",
+        "InstanceId": 10596808
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10596020
+      },
+      "Textures": [
+        {
+          "$id": "48",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "UL_PantsWide_Fighter_U_Any",
+            "InstanceId": 10599382
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    }
+  ],
+  "OutfitParts": [],
+  "name": "EE_Fighter_M_Any_Colorize"
+}
