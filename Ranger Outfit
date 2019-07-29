@@ -74,7 +74,7 @@ namespace KAZ_Outfit_Ranger_A_01
                 LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Sleeve_B.png")),
             };
             //EE_Fighter_M_Any_Colorize
-            BodyPartTextures["551682302c6f9b146b7657c52b5cabac"] = new Texture2D[]
+            OutfitTextures["551682302c6f9b146b7657c52b5cabac"] = new Texture2D[]
             {
                 LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Fighter_Forearms.png")),
                 LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Fighter_Faulds.png")),
@@ -95,7 +95,7 @@ namespace KAZ_Outfit_Ranger_A_01
                 LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Fighter_Pants.png")),
             };
             //EE_Fighter_F_Any_Colorize
-            BodyPartTextures["d771acb96d986484dbd006a78a65cdba"] = new Texture2D[]
+            OutfitTextures["d771acb96d986484dbd006a78a65cdba"] = new Texture2D[]
             {
                 LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Fighter_Forearms.png")),
                 LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Fighter_Faulds.png")),
