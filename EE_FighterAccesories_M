@@ -1,0 +1,101 @@
+{
+  "$id": "1",
+  "$type": "Kingmaker.Visual.CharacterSystem.EquipmentEntity, Assembly-CSharp",
+  "m_PrimaryRamps": [],
+  "m_SecondaryRamps": [],
+  "Layer": 300,
+  "ShowLowerMaterials": true,
+  "SkeletonModifiers": [],
+  "BodyParts": [
+    {
+      "$id": "2",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Torso",
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 15865648
+      },
+      "Textures": [
+        {
+          "$id": "3",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "TS_Shirt_BeltsWarriorShadow_U_Any",
+            "InstanceId": 15865658
+          },
+          "m_Ramps": []
+        }
+      ]
+    },
+    {
+      "$id": "4",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Torso",
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 15865648
+      },
+      "Textures": [
+        {
+          "$id": "5",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "TS_Shirt_BeltsWarrior_U_Any",
+            "InstanceId": 15865654
+          },
+          "m_Ramps": []
+        }
+      ]
+    },
+    {
+      "$id": "6",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Faulds",
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 15865648
+      },
+      "Textures": [
+        {
+          "$id": "7",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "FD_Faulds_BeltsWarriorShadow_U_Any",
+            "InstanceId": 15865660
+          },
+          "m_Ramps": []
+        }
+      ]
+    },
+    {
+      "$id": "8",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Faulds",
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 15865648
+      },
+      "Textures": [
+        {
+          "$id": "9",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "FD_Faulds_BeltsWarrior_U_Any",
+            "InstanceId": 15865650
+          },
+          "m_Ramps": []
+        }
+      ]
+    }
+  ],
+  "OutfitParts": [],
+  "name": "EE_FighterAccesories_M"
+}
