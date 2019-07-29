@@ -1,0 +1,44 @@
+{
+  "$id": "1",
+  "$type": "Kingmaker.Visual.CharacterSystem.EquipmentEntity, Assembly-CSharp",
+  "m_HideBodyParts": 0,
+  "m_PrimaryRamps": [],
+  "m_SecondaryRamps": [],
+  "IsExportEnabled": false,
+  "Layer": 200,
+  "ShowLowerMaterials": false,
+  "SkeletonModifiers": [],
+  "ColorsProfile": null,
+  "BodyParts": [
+    {
+      "$id": "2",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Boots",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "BO_BootsSimple_M_Any",
+        "InstanceId": 10486428
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10486302
+      },
+      "Textures": [
+        {
+          "$id": "3",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "BO_BootsSimple_Manticore",
+            "InstanceId": 10486332
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    }
+  ],
+  "OutfitParts": [],
+  "name": "EE_Boots_BootsSimpleManticore_M"
+}
