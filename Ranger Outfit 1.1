@@ -1,0 +1,220 @@
+using UnityEngine;
+using Harmony12;
+using UnityModManagerNet;
+using static UnityModManagerNet.UnityModManager;
+using Kingmaker.Blueprints;
+using System;
+using System.Reflection;
+using System.IO;
+using Kingmaker.Visual.CharacterSystem;
+using Kingmaker.ResourceLinks;
+using System.Collections.Generic;
+using System.Linq;
+using Kingmaker.View;
+using Kingmaker.Blueprints.Items.Equipment;
+using Kingmaker.Items;
+
+namespace KAZ_Outfit_Ranger_A_01
+{
+    public static class Main
+    {
+        public static bool enabled;
+        public static ModEntry mod;
+        public static Dictionary<string, Texture2D[]> BodyPartTextures = new Dictionary<string, Texture2D[]>();
+        public static Dictionary<string, Texture2D[]> OutfitTextures = new Dictionary<string, Texture2D[]>();
+        static bool Load(ModEntry modEntry)
+        {
+            mod = modEntry;
+            try
+            {
+                LoadTextures();
+                var harmony = HarmonyInstance.Create(modEntry.Info.Id);
+                harmony.PatchAll(Assembly.GetExecutingAssembly());
+
+                modEntry.OnToggle = OnToggle;
+            }
+            catch (Exception ex)
+            {
+                modEntry.Logger.Error(ex.ToString());
+                return false;
+            }
+            return true;
+        }
+
+        static bool OnToggle(UnityModManager.ModEntry modEntry, bool value)
+        {
+            enabled = value;
+
+            return true;
+        }
+        static void LoadTextures()
+        {
+            //EE_Armor_LeatherRanger_M
+            BodyPartTextures["010db92068a68dc42929e168a793953d"] = new Texture2D[]
+            {
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Sleeve_A.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Bracers.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Faulds_Shadow.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Faulds.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Spaulders.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Torso.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Sleeve_Shadow.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Sleeve_B.png")),
+            };
+            //EE_Armor_LeatherRanger_F
+            BodyPartTextures["96a51a20ed77b7b4fa549b5e1e05057c"] = new Texture2D[]
+            {
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Sleeve_A.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Bracers.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Faulds_Shadow.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Faulds.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Spaulders.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Torso.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Sleeve_Shadow.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Sleeve_B.png")),
+            };
+            //EE_Armor_LeatherRanger_F
+            BodyPartTextures["96a51a20ed77b7b4fa549b5e1e05057c"] = new Texture2D[]
+            {
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Sleeve_A.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Bracers.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Faulds_Shadow.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Faulds.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Spaulders.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Torso.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Sleeve_Shadow.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Armour_Ranger_Sleeve_B.png")),
+            };
+            //EE_Boots_BootsSimpleManticore_M
+            BodyPartTextures["68bcaf85bced5d04fa1240a5b5622560"] = new Texture2D[]
+            {
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Boots_Leather_A_01.png")),
+            };
+            //EE_Boots_BootsSimpleManticore_F
+            BodyPartTextures["be376af1e2769424e803b7855214fa45"] = new Texture2D[]
+            {
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Boots_Leather_A_01.png")),
+            };
+            //EE_Gloves_GlovesManticore_M
+            BodyPartTextures["370072c77f077934aae77b93052a34e3"] = new Texture2D[]
+            {
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Gloves_Leather_Cuffs_A_01.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Gloves_Leather_Hands_A_01.png")),
+            };
+            //EE_Gloves_GlovesManticore_F
+            BodyPartTextures["354400f2dcf0a5848ae20e1bb4a710fc"] = new Texture2D[]
+            {
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Gloves_Leather_Cuffs_A_01.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Gloves_Leather_Hands_A_01.png")),
+            };
+            //EE_FighterAccesories_M
+            BodyPartTextures["67b5adfbb99269b43bb3ca00438626c8"] = new Texture2D[]
+            {
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Belt_Fighter_A_Shadow.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Belt_Fighter_A.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Belt_Fighter_B_Shadow.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Belt_Fighter_B.png")),
+            };
+            //EE_FighterAccesories_F
+            BodyPartTextures["8061ab0f406f7f84e8d36eada05f97a7"] = new Texture2D[]
+            {
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Belt_Fighter_A_Shadow.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Belt_Fighter_A.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Belt_Fighter_B_Shadow.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Belt_Fighter_B.png")),
+            };
+            //Fighter_M_Accessories
+            OutfitTextures["9875b1f3cf3b8bf42a5fb99907e5a794"] = new Texture2D[]
+            {
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Mug.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Bag.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Backpack.png")),
+            };
+            //Fighter_F_Accessories
+            OutfitTextures["04e8446d4666d6a46b28a98c55ec9f6c"] = new Texture2D[]
+            {
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Mug.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Bag.png")),
+                LoadTexture(Path.Combine(Main.mod.Path, "KAZ_Accessories_Backpack.png")),
+            };
+        }
+        public static void FixBodypartTextures(EquipmentEntity ee, params Texture2D[] textures)
+        {
+            for (int i = 0; i < ee.BodyParts.Count && i < textures.Length; i++)
+            {
+                if (textures[i] == null) continue;
+                var ctd = new CharacterTextureDescription(CharacterTextureChannel.Diffuse, textures[i]);
+                ee.BodyParts[i].Textures[0] = ctd;
+            }
+        }
+        public static void FixOutfitTextures(EquipmentEntity ee, params Texture2D[] textures)
+        {
+            for (int i = 0; i < ee.OutfitParts.Count && i < textures.Length; i++)
+            {
+                if (textures[i] == null) continue;
+                var prefab = AccessTools.FieldRefAccess<EquipmentEntity, GameObject>(ee, "m_Prefab");
+                var mat = prefab?.GetComponent<Renderer>()?.material;
+                mat.mainTexture = textures[i];
+            }
+        }
+        public static void FixTextures(EquipmentEntityLink eel)
+        {
+            if (Main.BodyPartTextures.ContainsKey(eel.AssetId))
+            {
+                Main.FixBodypartTextures(eel.Load(false), Main.BodyPartTextures[eel.AssetId]);
+            }
+            if (Main.OutfitTextures.ContainsKey(eel.AssetId))
+            {
+                Main.FixOutfitTextures(eel.Load(false), Main.OutfitTextures[eel.AssetId]);
+            }
+        }
+        static Texture2D LoadTexture(string filePath)
+        {
+            var fileData = File.ReadAllBytes(filePath);
+            var texture = new Texture2D(2, 2);
+            texture.LoadImage(fileData);
+            return texture;
+        }
+    }
+    [Harmony12.HarmonyPatch(typeof(UnitEntityView), "ExtractEquipmentEntities", new Type[] { typeof(ItemEntity) })]
+    static class UnitEntityView_ExtractEquipmentEntities_Patch
+    {
+        static void Postfix(UnitEntityView __instance, ItemEntity item)
+        {
+            try
+            {
+                if (item == null) return;
+                var blueprintItemEquipment = item.Blueprint as BlueprintItemEquipment;
+                if (blueprintItemEquipment == null) return;
+                if (blueprintItemEquipment.EquipmentEntity == null) return;
+                var gender = __instance.EntityData.Gender;
+                var race = __instance.EntityData.Descriptor.Progression.Race;
+                var raceId = race?.RaceId ?? Race.Human;
+                var links = blueprintItemEquipment.EquipmentEntity.GetLinks(gender, raceId);
+                foreach (var eel in links)
+                {
+                    Main.FixTextures(eel);
+                }
+            }
+            catch (Exception ex)
+            {
+                Main.mod.Logger.Error(ex.ToString());
+            }
+        }
+    }
+    [Harmony12.HarmonyPatch(typeof(Character), "AddEquipmentEntity", new Type[] { typeof(EquipmentEntityLink) })]
+    static class Character_AddEquipmentEntity_Patch
+    {
+        static void Prefix(EquipmentEntityLink eel)
+        {
+            try
+            {
+                Main.FixTextures(eel);
+            }
+            catch (Exception ex)
+            {
+                Main.mod.Logger.Error(ex.ToString());
+            }
+        }
+    }
+}
