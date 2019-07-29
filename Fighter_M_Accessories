@@ -1,0 +1,109 @@
+{
+  "$id": "1",
+  "$type": "Kingmaker.Visual.CharacterSystem.EquipmentEntity, Assembly-CSharp",
+  "m_HideBodyParts": 0,
+  "m_PrimaryRamps": [],
+  "m_SecondaryRamps": [],
+  "IsExportEnabled": false,
+  "Layer": 0,
+  "ShowLowerMaterials": false,
+  "SkeletonModifiers": [],
+  "ColorsProfile": null,
+  "BodyParts": [],
+  "OutfitParts": [
+    {
+      "$id": "2",
+      "$type": "Kingmaker.Visual.CharacterSystem.EquipmentEntity+OutfitPart, Assembly-CSharp",
+      "m_Prefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "ST_BagWarrior_U_Any",
+        "InstanceId": 8237562
+      },
+      "m_Material": null,
+      "m_Position": [
+        0.0,
+        -0.05,
+        0.17
+      ],
+      "m_Rotation": [
+        70.0,
+        153.808,
+        -28.167
+      ],
+      "m_Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "m_BoneName": "L_front_weapon_slot_04_ADJ",
+      "m_StaysInPeacefulMode": false,
+      "m_OnlyInDollRoom": false,
+      "m_Special": "None",
+      "FirstCapeColorMask": null,
+      "SecondCapeColorMask": null
+    },
+    {
+      "$id": "3",
+      "$type": "Kingmaker.Visual.CharacterSystem.EquipmentEntity+OutfitPart, Assembly-CSharp",
+      "m_Prefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "ST_MugWarrior_U_Any",
+        "InstanceId": 8237536
+      },
+      "m_Material": null,
+      "m_Position": [
+        -0.037,
+        -0.031,
+        0.042
+      ],
+      "m_Rotation": [
+        41.934,
+        -7.319,
+        -287.906
+      ],
+      "m_Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "m_BoneName": "R_front_weapon_slot_02_ADJ",
+      "m_StaysInPeacefulMode": false,
+      "m_OnlyInDollRoom": false,
+      "m_Special": "None",
+      "FirstCapeColorMask": null,
+      "SecondCapeColorMask": null
+    },
+    {
+      "$id": "4",
+      "$type": "Kingmaker.Visual.CharacterSystem.EquipmentEntity+OutfitPart, Assembly-CSharp",
+      "m_Prefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "ST_BackpackWarrior_U_Any",
+        "InstanceId": 8237526
+      },
+      "m_Material": null,
+      "m_Position": [
+        0.0,
+        0.02,
+        0.05
+      ],
+      "m_Rotation": [
+        -84.0,
+        113.0,
+        -114.0
+      ],
+      "m_Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "m_BoneName": "C_back_weapon_slot_08_ADJ",
+      "m_StaysInPeacefulMode": false,
+      "m_OnlyInDollRoom": false,
+      "m_Special": "Backpack",
+      "FirstCapeColorMask": null,
+      "SecondCapeColorMask": null
+    }
+  ],
+  "name": "Fighter_M_Accessories"
+}
