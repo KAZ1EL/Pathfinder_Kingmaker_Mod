@@ -1,0 +1,240 @@
+{
+  "$id": "1",
+  "$type": "Kingmaker.Visual.CharacterSystem.EquipmentEntity, Assembly-CSharp",
+  "m_HideBodyParts": 0,
+  "m_PrimaryRamps": [],
+  "m_SecondaryRamps": [],
+  "IsExportEnabled": false,
+  "Layer": 200,
+  "ShowLowerMaterials": true,
+  "SkeletonModifiers": [],
+  "ColorsProfile": null,
+  "BodyParts": [
+    {
+      "$id": "2",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Forearms",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "FA_LongSleeveThick_M_Any",
+        "InstanceId": 10404442
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10401786
+      },
+      "Textures": [
+        {
+          "$id": "3",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "FA_LongSleeveThick_LeatherRanger_U_Any",
+            "InstanceId": 10405222
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "4",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Forearms",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "FA_BracersConvex_M_Any",
+        "InstanceId": 10403860
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10401786
+      },
+      "Textures": [
+        {
+          "$id": "5",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "FA_BracersConvex_LeatherRanger_U_Any",
+            "InstanceId": 10405482
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "6",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Faulds",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "FD_Faulds_M_Any",
+        "InstanceId": 10405348
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10401786
+      },
+      "Textures": [
+        {
+          "$id": "7",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "FD_Faulds_LeatherRangerShadow_U_Any",
+            "InstanceId": 10403012
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "8",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Faulds",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "FD_Faulds_M_Any",
+        "InstanceId": 10405348
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10401786
+      },
+      "Textures": [
+        {
+          "$id": "9",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "FD_Faulds_LeatherRanger_U_Any",
+            "InstanceId": 10403298
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "10",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Spaulder",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "SP_SpauldersAlchemist_M_Any",
+        "InstanceId": 10401756
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10401786
+      },
+      "Textures": [
+        {
+          "$id": "11",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "SP_SpauldersAlchemist_LeatherRanger_U_Any",
+            "InstanceId": 10402406
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "12",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Torso",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "TS_ShirtSlim_M_Any",
+        "InstanceId": 10401708
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10401786
+      },
+      "Textures": [
+        {
+          "$id": "13",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "TS_ShirtSlim_LeatherRanger_U_Any",
+            "InstanceId": 10402792
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "14",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Upperarms",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "UA_LongSleeveThick_M_Any",
+        "InstanceId": 10404996
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10401786
+      },
+      "Textures": [
+        {
+          "$id": "15",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "UA_LongSleeveThick_LeatherRangerBracersShadow_U_Any",
+            "InstanceId": 10403770
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    },
+    {
+      "$id": "16",
+      "$type": "Kingmaker.Visual.CharacterSystem.BodyPart, Assembly-CSharp",
+      "m_Type": "Upperarms",
+      "RendererPrefab": {
+        "$type": "UnityEngine.GameObject, UnityEngine.CoreModule",
+        "name": "UA_LongSleeveThick_M_Any",
+        "InstanceId": 10404996
+      },
+      "Material": {
+        "$type": "UnityEngine.Material, UnityEngine.CoreModule",
+        "name": "Character_Diffuse_Cutout",
+        "InstanceId": 10401786
+      },
+      "Textures": [
+        {
+          "$id": "17",
+          "$type": "Kingmaker.Visual.CharacterSystem.CharacterTextureDescription, Assembly-CSharp",
+          "m_Texture": {
+            "$type": "UnityEngine.Texture2D, UnityEngine.CoreModule",
+            "name": "UA_LongSleeveThick_LeatherRanger_U_Any",
+            "InstanceId": 10405502
+          },
+          "m_Ramps": [],
+          "Channel": "Diffuse"
+        }
+      ]
+    }
+  ],
+  "OutfitParts": [],
+  "name": "EE_Armor_LeatherRanger_M"
+}
